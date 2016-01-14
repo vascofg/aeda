@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="deposit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="operation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classoperation.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" account_oper" ,fontname="Helvetica"];
+  Node3 [label="account",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classaccount.html",tooltip="Class Accounts."];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" NIB" ,fontname="Helvetica"];
+  Node4 [label="nib",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnib.html",tooltip="Numero de Identificao Bancaria (21 Digits) - Format BBBB AAAA NNNN NNNN NNNC C."];
+}
